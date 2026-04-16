@@ -15,8 +15,8 @@ services:
     volumes:
       - '/htdocs'
     ports:
-      - '8080:80'
-      - '8081:443'
+      - '8081:80'
+      - '8082:443'
     restart: unless-stopped
     user: apache:apache
     # read_only: true
@@ -29,4 +29,4 @@ services:
     environment:
         MYSQL_ROOT_PASSWORD: xeFgUGb5mPPn5q2d
     ports:
-        - 3306:3306
+        - 3307:3306
